@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
   .addField("Name", client.user.username)
   .addField("ID", client.user.id)
   .addField("Guilds", client.guilds.size)
-  .addField("Guilds", client.users.size)
+  .addField("Users", client.users.size)
   .addField("Uptime", client.readyAt.getDate(), client.readyAt.getMonth() + 1, client.readyAt.getFullYear())
   .addField("Library", "discord.js")
   .setTimestamp()
