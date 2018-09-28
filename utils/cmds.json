@@ -8,7 +8,8 @@
   "info": [
     "``help``",
     " ``ping``",
-    " ``invite``"
+    " ``invite``",
+    " ``botinfo``"
   ],
   "utility": [
     "``poll``"
