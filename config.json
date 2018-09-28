@@ -1,5 +1,5 @@
 {
-  "cmd_prefix": "-",
+  "cmd_prefix": "sh!",
   "ownerID": "416540213696004117",
   "invitelink": "Use this link: https://discordapp.com/api/oauth2/authorize?client_id=485016841324855299&permissions=8&scope=bot"
 }
