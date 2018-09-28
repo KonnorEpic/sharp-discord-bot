@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const fs = require('fs');
 const db = require('quick.db');
 const config = require('./config.json');
+const TOKEN = "";
 
 const { cmd_prefix, ownerID } = config;
 
@@ -38,4 +39,4 @@ client.on('message', async message => {
 });
 
 
-client.login(proccess.env.BOT_TOKEN);
+client.login(TOKEN);
