@@ -1,5 +1,7 @@
 # SHARP - DISCORD BOT
 
-## TEST
+## ABOUT
 
-## TEST
+## COMMANDS
+
+1. INFO
