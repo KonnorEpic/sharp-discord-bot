@@ -29,10 +29,12 @@ client.on('ready', async () => {
 
 client.on('message', async message => {
   let prefix = cmd_prefix;
-  let msgArray = message.content.split(" ");
-  let cmd = msgArray[0];
-  let args = msgArray.slice(1);
-  let cmdFile = client.commands.get(cmd.slice(prefix.length));
+  let cont = message.content.slice(prefix.length).split(" ");
+  let args = cont.slice(1);
+  
+  if(!message.content.startsWith(prefix)) return;
+  
+  let cmdFile = client.commands.get(cont[0]);
   if(cmdFile) cmdFile.run(client, message, args);
 });
 
