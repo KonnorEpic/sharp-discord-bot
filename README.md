@@ -1,7 +1,5 @@
 # SHARP - DISCORD BOT
 
-## ABOUT
+## DEVELOPERS
 
-## COMMANDS
-
-1. INFO
+- KonnorEpic (IxLe) [GITHUB](https://github.com/KonnorEpic)
