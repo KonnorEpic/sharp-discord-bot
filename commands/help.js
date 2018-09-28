@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
   .setColor(color.green)
   .addField("Info", cmds.info + "\n")
   .addField("Fun", cmds.fun + "\n")
-  .addField("Image Manipulation", cmds.image + "\n")
+  .addField("Image", cmds.image + "\n")
   .addField("Utility", cmds.utility + "\n")
   .setTimestamp()
   .setFooter(`${author}`);
