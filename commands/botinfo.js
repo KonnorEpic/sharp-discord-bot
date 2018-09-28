@@ -10,7 +10,6 @@ module.exports.run = async (client, message, args) => {
   .addField("ID", client.user.id)
   .addField("Guilds", client.guilds.size)
   .addField("Users", client.users.size)
-  .addField("Uptime", client.readyAt.getMinutes() + " minutes")
   .addField("Library", "discord.js")
   .setTimestamp()
   .setFooter(`${author}`);
