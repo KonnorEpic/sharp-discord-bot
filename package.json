@@ -2,7 +2,7 @@
   "//1": "describes your app and its dependencies",
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
-  "name": "snowball-discord-bot",
+  "name": "sharp-discord-bot",
   "version": "0.0.1",
   "description": "A discord bot",
   "main": "index.js",
@@ -21,7 +21,7 @@
     "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/snowball-discord-bot"
+    "url": "https://glitch.com/edit/#!/sharp-discord-bot"
   },
   "license": "MIT",
   "keywords": [
