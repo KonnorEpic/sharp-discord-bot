@@ -1,2 +1,5 @@
-# sharp-discord-bot
-This is a discord bot.
+# SHARP - DISCORD BOT
+
+## TEST
+
+## TEST
