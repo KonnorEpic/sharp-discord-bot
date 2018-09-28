@@ -1,0 +1,19 @@
+{
+  "fun": [
+    "``coinflip``",
+    " ``say``",
+    " ``cowsay``",
+    " ``ascii``"
+  ],
+  "info": [
+    "``help``",
+    " ``ping``",
+    " ``invite``"
+  ],
+  "utility": [
+    "``poll``"
+  ],
+  "image": [
+    "``achievement``"
+  ]
+}
