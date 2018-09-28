@@ -8,6 +8,7 @@ module.exports.run = async (client, message, args) => {
   let embed = new Discord.RichEmbed()
   .setAuthor("Random cat found!")
   .setFooter("Powered by nekos.life")
+  .setTimestamp()
   .setImage(body.url);
   
   message.channel.send(embed);
