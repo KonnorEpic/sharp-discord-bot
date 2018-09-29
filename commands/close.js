@@ -5,12 +5,13 @@ module.exports.run = async (client, message, args) => {
   if(message.author.id === config.ownerID) {
     client.destroy();
     let msg = message.channel.send("``Reloading...``");
-    await msg.delete({
+    let msg2 = await msg.delete({
       time: 2000
     });
+    msg2.edit("Succefully reload!");
   }
   
-  message.channel.send("Oh, you dont my developer!")
+  message.channel.send("Oh, you dont my developer!");
 }
 
 module.exports.help = {
