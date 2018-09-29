@@ -4,11 +4,11 @@ const config = require('../config.json')
 module.exports.run = async (client, message, args) => {
   if(message.author.id === config.ownerID) {
     let msg = message.channel.send("``Reloading...``");
-    let msg2 = await msg.delete({
+    await msg.delete({
       time: 3
     });
     client.destroy();
-    msg2.edit("``Succefully reload!``");
+    message.channel.send("``Succefully reload!``");
   }
   
   message.channel.send("Oh, you dont my developer!");
