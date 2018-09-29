@@ -14,6 +14,7 @@ module.exports.run = async (client, message, args) => {
     .setFooter(`${author}`);
     
     message.channel.send(infoEmbed);
+    return;
   }
   
   let embed = new Discord.RichEmbed()
