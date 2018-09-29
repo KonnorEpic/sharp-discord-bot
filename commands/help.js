@@ -4,19 +4,26 @@ const cmds = require('../utils/cmds.json');
 
 module.exports.run = async (client, message, args) => {
   let author = message.author.username;
-  message.channel.send("**" + author + "**, :mailbox_with_mail: | Check Your DM's.");
+  
+  if(!args[0] === "info") {
+    let infoEmbed = new Discord.RichEmbed()
+    .setAuthor("List of commands for category: ``info``")
+    .setColor(color.green)
+    .addField("Info", cmds.info + "\n")
+    .setTimestamp()
+    .setFooter(`${author}`);
+    
+    message.channel.send(infoEmbed);
+  }
   
   let embed = new Discord.RichEmbed()
-  .setAuthor("List of commands")
+  .setAuthor("List of categorys")
   .setColor(color.green)
-  .addField("Info", cmds.info + "\n")
-  .addField("Fun", cmds.fun + "\n")
-  .addField("Image", cmds.image + "\n")
-  .addField("Utility", cmds.utility + "\n")
+  .addField("Category", cmds.category)
   .setTimestamp()
   .setFooter(`${author}`);
   
-  message.member.send(embed);
+  message.channel.send(embed);
 }
 
 module.exports.help = {
