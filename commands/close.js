@@ -2,10 +2,10 @@ const Discord = require('discord.js');
 const config = require('../config.json')
 
 module.exports.run = async (client, message, args) => {
-  if(message.author.id === config.ownerID) {
+  if(message.author.id !== config.ownerID) {
     let msg = await message.channel.send("``Reloading...``");
     await msg.delete({
-      time: 30
+      time: 2000
     });
     client.destroy();
     message.channel.send("``Succefully reload!``");
