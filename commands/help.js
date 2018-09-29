@@ -5,7 +5,7 @@ const cmds = require('../utils/cmds.json');
 module.exports.run = async (client, message, args) => {
   let author = message.author.username;
   
-  if(!args[0] === "info") {
+  if(args[0] === "info") {
     let infoEmbed = new Discord.RichEmbed()
     .setAuthor("List of commands for category: ``info``")
     .setColor(color.green)
