@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
   
   if(args[0] === "info") {
     let infoEmbed = new Discord.RichEmbed()
-    .setAuthor("List of commands for category: ``info``")
+    .setAuthor("List of commands for category: **info**")
     .setColor(color.green)
     .addField("Info", cmds.info + "\n")
     .setTimestamp()
@@ -17,9 +17,45 @@ module.exports.run = async (client, message, args) => {
     return;
   }
   
+  if(args[0] === "fun") {
+    let funEmbed = new Discord.RichEmbed()
+    .setAuthor("List of commands for category: **fun**")
+    .setColor(color.green)
+    .addField("Fun", cmds.fun + "\n")
+    .setTimestamp()
+    .setFooter(`${author}`);
+    
+    message.channel.send(funEmbed);
+    return;
+  }
+  
+  if(args[0] === "image") {
+    let imgEmbed = new Discord.RichEmbed()
+    .setAuthor("List of commands for category: **image**")
+    .setColor(color.green)
+    .addField("Image", cmds.image + "\n")
+    .setTimestamp()
+    .setFooter(`${author}`);
+    
+    message.channel.send(imgEmbed);
+    return;
+  }
+  
+  if(args[0] === "utility") {
+    let utilEmbed = new Discord.RichEmbed()
+    .setAuthor("List of commands for category: **utility**")
+    .setColor(color.green)
+    .addField("Utility", cmds.utility + "\n")
+    .setTimestamp()
+    .setFooter(`${author}`);
+    
+    message.channel.send(utilEmbed);
+    return;
+  }
+  
   let embed = new Discord.RichEmbed()
   .setAuthor("List of categorys")
-  .setColor(color.green)
+  .setColor(color.gold)
   .addField("Category", cmds.category)
   .setTimestamp()
   .setFooter(`${author}`);
