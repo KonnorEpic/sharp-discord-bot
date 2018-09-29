@@ -7,11 +7,9 @@ module.exports.run = async (client, message, args) => {
   message.channel.send("**" + author + "**, :mailbox_with_mail: | Check Your DM's.");
   
   let embed = new Discord.RichEmbed()
+  .setAuthor("List of commands")
   .setColor(color.green)
-  .addField("Info", cmds.info + "\n")
-  .addField("Fun", cmds.fun + "\n")
-  .addField("Image", cmds.image + "\n")
-  .addField("Utility", cmds.utility + "\n")
+  .addField("Fun", `${client.commands.filter(cmd => cmd.help.category === 'fun').map(cmd => `\`${cmd.help.name}\``).join(", ")}`, true))
   .setTimestamp()
   .setFooter(`${author}`);
   
