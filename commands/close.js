@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const config = require('../config.json')
 
 module.exports.run = async (client, message, args) => {
-  if(!message.author.id === config.ownerID) {
-    let msg = message.channel.send("``Reloading...``");
+  if(message.author.id === config.ownerID) {
+    let msg = await message.channel.send("``Reloading...``");
     await msg.delete({
       time: 30
     });
