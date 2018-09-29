@@ -9,7 +9,10 @@ module.exports.run = async (client, message, args) => {
   let embed = new Discord.RichEmbed()
   .setAuthor("List of commands")
   .setColor(color.green)
-  .addField("Fun", `${client.commands.filter(cmd => cmd.help.category === 'fun').map(cmd => `\`${cmd.help.name}\``).join(", ")}`, true))
+  .addField("Info", cmds.info + "\n")
+  .addField("Fun", cmds.fun + "\n")
+  .addField("Image", cmds.image + "\n")
+  .addField("Utility", cmds.utility + "\n")
   .setTimestamp()
   .setFooter(`${author}`);
   
