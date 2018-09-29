@@ -8,6 +8,5 @@ module.exports.run = async (client, message, args) => {
 }
 
 module.exports.help = {
-  name: "coinflip",
-  category: "fun"
+  name: "coinflip"
 }
