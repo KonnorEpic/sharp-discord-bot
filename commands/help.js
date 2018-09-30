@@ -53,6 +53,18 @@ module.exports.run = async (client, message, args) => {
     return;
   }
   
+  if(args[0] === "nsfw") {
+    let nsfwEmbed = new Discord.RichEmbed()
+    .setAuthor("List of commands for category: Nsfw")
+    .setColor(color.green)
+    .addField("NSFW", cmds.nsfw + "\n")
+    .setTimestamp()
+    .setFooter(`${author}`);
+    
+    message.channel.send(nsfwEmbed);
+    return;
+  }
+  
   let embed = new Discord.RichEmbed()
   .setAuthor("List of categories")
   .setColor(color.gold)
