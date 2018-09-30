@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const fs = require('fs');
+const db = require('quick.db');
 const config = require('./config.json');
 
 const { cmd_prefix, ownerID } = config;
