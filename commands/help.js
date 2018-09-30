@@ -4,6 +4,12 @@ const cmds = require('../utils/cmds.json');
 
 module.exports.run = async (client, message, args) => {
   let author = message.author.username;
+  let txt = args.join(' ');
+  
+  if(args[0] === txt) {
+    message.channel.send("This category is not valid!");
+    return;
+  }
   
   if(args[0] === "info") {
     let infoEmbed = new Discord.RichEmbed()
