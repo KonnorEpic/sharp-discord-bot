@@ -20,10 +20,14 @@
     " ``dog``",
     " ``banner``"
   ],
+  "nsfw": [
+    "``hentai``"
+  ],
   "category": [
     "``info``",
     " ``fun``",
     " ``image``",
-    " ``utility``"
+    " ``utility``",
+    " ``nsfw``"
   ]
 }
