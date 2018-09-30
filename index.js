@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const fs = require('fs');
-const db = require('quick.db');
 const config = require('./config.json');
 
 const { cmd_prefix, ownerID } = config;
@@ -30,25 +29,14 @@ client.on('ready', async () => {
 
 client.on('message', async message => {
   
-  db.fetchObject(`guildPrefix_${message.guild.id}`).then(i => {
+   let prefix = cmd_prefix;  
+   let cont = message.content.slice(prefix.length).split(" ");
+   let args = cont.slice(1);
   
-    let prefix;
-    
-    if(i.text) {
-      prefix = i.text
-    } else {
-      prefix = cmd_prefix
-    }
-    
-    let cont = message.content.slice(prefix.length).split(" ");
-    let args = cont.slice(1);
+   if(!message.content.startsWith(prefix)) return;
   
-    if(!message.content.startsWith(prefix)) return;
-  
-    let cmdFile = client.commands.get(cont[0]);
-    if(cmdFile) cmdFile.run(client, message, args);
-  
-  });
+   let cmdFile = client.commands.get(cont[0]);
+   if(cmdFile) cmdFile.run(client, message, args);
 });
 
 
