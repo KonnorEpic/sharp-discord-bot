@@ -69,7 +69,7 @@ module.exports.run = async (client, message, args) => {
   .setAuthor("List of categories")
   .setColor(color.gold)
   .addField("Category", cmds.category)
-  .addField("Resources", `[Support Server](https://discord.gg/56KvWSs)`)
+  .addField("Resources", `[Support Server](https://discord.gg/nTSngkS)`)
   .setTimestamp()
   .setFooter(`${author}`);
   
