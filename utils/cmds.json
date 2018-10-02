@@ -3,7 +3,8 @@
     "``coinflip``",
     " ``say``",
     " ``cowsay``",
-    " ``ascii``"
+    " ``ascii``",
+    " ``reverse``"
   ],
   "info": [
     "``help``",
