@@ -13,7 +13,9 @@
     " ``botinfo``"
   ],
   "utility": [
-    "``poll``"
+    "``poll``",
+    " ``b64encode``",
+    " ``b64decode``"
   ],
   "image": [
     "``achievement``",
