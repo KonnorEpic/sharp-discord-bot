@@ -8,9 +8,11 @@ module.exports.run = async (client, message, args) => {
   .setAuthor("**[🎰 SLOT MACHINE 🎰]**")
   .setFooter(author + " started slot machine!")
   .setTimestamp()
-  .addField(`**-------------------**`, `${machine[random]} | ${machine[random]} | ${machine[random]}`)
-  .addField(`**-------------------**`, `${machine[random]} | ${machine[random]} | ${machine[random]} **<**`)
-  .addField(`**-------------------**`, `${machine[random]} | ${machine[random]} | ${machine[random]}`);
+  .addField("**-------------------**", "** **")
+  .addField(`${machine[random]} | ${machine[random]} | ${machine[random]}`, "** **")
+  .addField(`${machine[random]} | ${machine[random]} | ${machine[random]}`, "** **")
+  .addField(`${machine[random]} | ${machine[random]} | ${machine[random]}`, "** **")
+  .addField("**-------------------**", "** **");
   
   message.channel.send(embed);
 }
