@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
   .setTimestamp()
   .addField("**-------------------**", "** **")
   .addField(`${machine[random]} | ${machine[random]} | ${machine[random]}`, "** **")
-  .addField(`${machine[random]} | ${machine[random]} | ${machine[random]}`, "** **")
+  .addField(`${machine[random]} | ${machine[random]} | ${machine[random]} **<**`, "** **")
   .addField(`${machine[random]} | ${machine[random]} | ${machine[random]}`, "** **")
   .addField("**-------------------**", "** **");
   
