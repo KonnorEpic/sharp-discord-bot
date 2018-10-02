@@ -16,7 +16,7 @@
     "figlet": "^1.2.0",
     "quick.db": "^6.3.2",
     "superagent": "^3.8.3",
-    "dblapi.js": "^2.2.0"
+    "reverse-string": "^0.0.6"
   },
   "engines": {
     "node": "8.x"
