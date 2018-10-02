@@ -16,7 +16,8 @@
     "figlet": "^1.2.0",
     "quick.db": "^6.3.2",
     "superagent": "^3.8.3",
-    "reverse-string": "^0.0.6"
+    "reverse-string": "^0.0.6",
+    "js-base64": "^2.4.9"
   },
   "engines": {
     "node": "8.x"
