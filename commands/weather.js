@@ -24,7 +24,7 @@ module.exports.run = async (client, message, args) => {
     .setColor(color.gold)
     .addField("Timezone", `UTC ${location.timezone}`, true)
     .addField("Degree Type", location.degreetype, true)
-    .addField("Temperature", `${location.temperature} Degrees`, true)
+    .addField("Temperature", `${current.temperature} Degrees`, true)
     .addField("Feels Like", `${current.feelslike} Degrees`, true)
     .addField("Winds", current.winddisplay, true)
     .addField("Humidity", `${current.humidity}%`, true);
