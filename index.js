@@ -33,7 +33,7 @@ client.on('message', async message => {
    let cont = message.content.slice(prefix.length).split(" ");
    let args = cont.slice(1);
   
-   if(!message.content.toLowerCase().startsWith(prefix)) return;
+   if(!message.content.startsWith(prefix)) return;
   
    let cmdFile = client.commands.get(cont[0]);
    if(cmdFile) cmdFile.run(client, message, args);
