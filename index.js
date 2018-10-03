@@ -29,15 +29,7 @@ client.on('ready', async () => {
 
 client.on('message', async message => {
   
-  let prefixes = JSON.parse(fs.readFileSync("./utils/prefixes.json", "utf8"));
-  
-  if(!prefixes[message.guild.id]) {
-    prefixes[message.guild.id] = {
-      prefixes:  cmd_prefix
-    };
-  }
-  
-   let prefix = prefixes[message.guild.id].prefixes;  
+   let prefix = cmd_prefix;  
    let cont = message.content.slice(prefix.length).split(" ");
    let args = cont.slice(1);
   
