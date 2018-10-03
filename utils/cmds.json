@@ -16,7 +16,8 @@
   "utility": [
     "``poll``",
     " ``b64encode``",
-    " ``b64decode``"
+    " ``b64decode``",
+    " ``weather``"
   ],
   "image": [
     "``achievement``",
