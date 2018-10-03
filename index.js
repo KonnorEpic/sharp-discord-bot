@@ -24,7 +24,7 @@ const client = new Discord.Client({disableEveryone: true});
 
 client.on('ready', async () => {
   console.log('Bot is ready!');
-  client.user.setActivity("-help", {type: "PLAYING"})
+  client.user.setActivity("sh!help", {type: "PLAYING"})
 });
 
 client.on('message', async message => {
