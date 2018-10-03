@@ -4,7 +4,7 @@ const color = require('../utils/color.json');
 
 module.exports.run = async (client, message, args) => {
   let txt = args.join(' ');
-  if(!args[0]) return message.channel.send("Please enter the correct location!")
+  if(!args[0]) return message.channel.send("Please enter the correct location!");
   
   weather.find({search: txt, degreeType: "F"}, (err, result) {
     if(err) message.channel.send("Please enter the correct location!");
