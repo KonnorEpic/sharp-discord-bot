@@ -4,7 +4,8 @@
     " ``say``",
     " ``cowsay``",
     " ``ascii``",
-    " ``reverse``"
+    " ``reverse``",
+    " ``slots``"
   ],
   "info": [
     "``help``",
