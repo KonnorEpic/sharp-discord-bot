@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
-  message.channel.send(`Pong!\n\API Ping - `${Math.floor(client.ping)}ms\`\nBot Ping - \`${Math.floor(new Date() - message.createdAt)}\`ms`);
+  message.channel.send(`Pong! | \`${Math.floor(client.ping)}\`ms`);
 }
 
 module.exports.help = {
