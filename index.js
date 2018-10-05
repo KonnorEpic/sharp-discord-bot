@@ -34,7 +34,7 @@ client.on('message', async message => {
    let args = cont.slice(1);
   
    if(!message.content.startsWith(prefix)) return;
-   if(!message.author.bot) return;
+   if(message.author.bot) return;
   
    let cmdFile = client.commands.get(cont[0]);
    if(cmdFile) cmdFile.run(client, message, args);
