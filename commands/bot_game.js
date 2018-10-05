@@ -7,6 +7,7 @@ module.exports.run = async (client, message, args) => {
   if(!args[0]) return message.channel.send("Owner, provide text.")
   
   client.user.setActivity(txt, {type: "PLAYING"});
+  message.channel.send("Successfully changed bot game to ``" + txt + "``.")
 }
 
 module.exports.help = {
