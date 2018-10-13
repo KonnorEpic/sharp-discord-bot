@@ -10,8 +10,6 @@ module.exports.run = async (client, message, args) => {
   message.channel.send(`The command `\`\${txt}`\`\ has been reloaded!`);
 }
 
-
-
 module.exports.help = {
   name: "reload"
 }
