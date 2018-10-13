@@ -16,8 +16,7 @@
   ],
   "utility": [
     "``poll``",
-    " ``b64encode``",
-    " ``b64decode``",
+    " ``base64``",
     " ``weather``"
   ],
   "image": [
