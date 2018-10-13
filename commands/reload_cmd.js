@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
 
   delete require.cache[require.resolve(`./${txt}.js`)];
   
-  message.channel.send(`The command `\`\${txt}`\`\ has been reloaded!`);
+  message.channel.send(`The command ``${txt}`` has been reloaded!`);
 }
 
 module.exports.help = {
