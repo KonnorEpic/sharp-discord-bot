@@ -1,17 +1,17 @@
 const Discord = require('discord.js');
-const superagent = require('superagent');
+const nekoClient = require('nekos.life');
+const neko = new nekoClient();
 
 module.exports.run = async (client, message, args) => {
-  let { body } = await superagent
-  .get("https://nekos.life/api/v2/img/hentai");
-  
   if(!message.channel.nsfw) return message.channel.send("This is not **NSFW** channel!");
+  
+  let hentai = await neko.getNSFWHentai();
 
   let embed = new Discord.RichEmbed()
   .setAuthor("Random hentai found!")
   .setFooter("Powered by nekos.life")
   .setTimestamp()
-  .setImage(body.url);
+  .setImage(hentai.url);
 
   message.channel.send(embed);
 }
