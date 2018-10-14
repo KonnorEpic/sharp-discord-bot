@@ -9,8 +9,6 @@ module.exports.run = async (client, message, args) => {
   message.channel.sendFile(qrImage, 'qrcode.png');
 }
 
-
-
 module.exports.help = {
   name: "qrcode"
 }
