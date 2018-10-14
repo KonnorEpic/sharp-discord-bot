@@ -18,7 +18,8 @@
     "superagent": "^3.8.3",
     "reverse-string": "^0.0.6",
     "js-base64": "^2.4.9",
-    "weather-js": "^2.0.0"
+    "weather-js": "^2.0.0",
+    "nekos.life": "^1.1.4"
   },
   "engines": {
     "node": "8.x"
