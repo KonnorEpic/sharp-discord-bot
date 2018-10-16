@@ -37,7 +37,7 @@ client.on('message', async message => {
    if(message.author.bot) return;
   
    let cmdFile = client.commands.get(cont[0]);
-   if(cmdFile) cmdFile.run(client, message, args);
+   if(cmdFile) cmdFile.run(client, message, args, Discord);
 });
 
 
