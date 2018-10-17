@@ -12,8 +12,6 @@ module.exports.run = async (client, message, args, Discord) => {
   }
 }
 
-
-
 module.exports.help = {
   name: "eval"
 }
