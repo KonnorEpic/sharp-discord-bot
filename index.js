@@ -40,36 +40,4 @@ client.on('message', async message => {
    if(cmdFile) cmdFile.run(client, message, args, Discord);
 });
 
-bot.on('guildMemberAdd', async member => {
-  let channel = member.guild.channels.find('name', 'welcome-and-bye');
-  if (!channel) return;
-  
-  let embed = new Discord.RichEmbed()
-  .setColor('RANDOM')
-  .setThumbnail(member.user.displayAvatarURL)
-  .addField('Welcome!', `Welcome to to server ${member.guild.name}, ${member.user.username}!`)
-  .addField('Name', `${member.user.username}`)
-  .addField('ID', `${member.user.id}`)
-  .addField('Member Count', `${member.guild.memberCount}`)
-  .setTimestamp();
-  
-  channel.send(embed);
-});
-
-bot.on('guildMemberRemove', async member => {
-  let channel = member.guild.channels.find('name', 'welcome-and-bye');
-  if (!channel) return;
-  
-  let embed = new Discord.RichEmbed()
-  .setColor('RANDOM')
-  .setThumbnail(member.user.displayAvatarURL)
-  .addField('Bye!', `${member.user.username} left the server!`)
-  .addField('Name', `${member.user.username}`)
-  .addField('ID', `${member.user.id}`)
-  .addField('Member Count', `${member.guild.memberCount}`)
-  .setTimestamp();
-  
-  channel.send(embed);
-});
-
 client.login(process.env.token);
