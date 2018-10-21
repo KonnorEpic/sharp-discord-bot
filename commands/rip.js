@@ -9,10 +9,14 @@ module.exports.run = async (client, message, args) => {
   const ava = await loadImage(user.displayAvatarURL);
   ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
   ctx.drawImage(ava, 80, 150, 65, 65);
-  const attachment = new Discord.Attachment(canvas.toBuffer(), 'rip.png');
-
-  message.channel.send(attachment);
-}
+  if(user.displayAvatarURL.endsWith(".gif")) {
+    const attachment = new Discord.Attachment(canvas.toBuffer(), 'rip.gif');
+    message.channel.send(attachment);
+  } else {
+    const attachment = new Discord.Attachment(canvas.toBuffer(), 'rip.png');
+    message.channel.send(attachment);
+    }
+  }
 
 module.exports.help = {
   name: "rip"
