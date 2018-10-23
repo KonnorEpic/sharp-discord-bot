@@ -20,8 +20,7 @@
     "js-base64": "^2.4.9",
     "weather-js": "^2.0.0",
     "nekos.life": "^1.1.4",
-    "qr-image": "^3.2.0",
-    "canvas": "^2.0.1"
+    "qr-image": "^3.2.0"
   },
   "engines": {
     "node": "8.x"
