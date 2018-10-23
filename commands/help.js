@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
     let infoEmbed = new Discord.RichEmbed()
     .setAuthor("List of commands for category: Info")
     .setColor(color.green)
-    .addField("Info", cmds.info.join("\n"))
+    .addField("Info", cmds.info.split(", "))
     .setTimestamp()
     .setFooter(`${author}`);
     
@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
     let funEmbed = new Discord.RichEmbed()
     .setAuthor("List of commands for category: Fun")
     .setColor(color.green)
-    .addField("Fun", cmds.fun.join("\n"))
+    .addField("Fun", cmds.fun.split(", "))
     .setTimestamp()
     .setFooter(`${author}`);
     
@@ -33,7 +33,7 @@ module.exports.run = async (client, message, args) => {
     let imgEmbed = new Discord.RichEmbed()
     .setAuthor("List of commands for category: Image")
     .setColor(color.green)
-    .addField("Image", cmds.image.join("\n"))
+    .addField("Image", cmds.image.split(", "))
     .setTimestamp()
     .setFooter(`${author}`);
     
@@ -57,7 +57,7 @@ module.exports.run = async (client, message, args) => {
     let nsfwEmbed = new Discord.RichEmbed()
     .setAuthor("List of commands for category: Nsfw")
     .setColor(color.green)
-    .addField("NSFW", cmds.nsfw.join("\n"))
+    .addField("NSFW", cmds.nsfw.split(", "))
     .setTimestamp()
     .setFooter(`${author}`);
     
