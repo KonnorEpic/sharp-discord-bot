@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
   
   if(args[0] === 'desc:') {
     let text = args.slice(6).join(' ');
-    if(!text[0]) return message.channel.send('You description provided!');
+    if(!text[0]) return message.channel.send('You not description provided!');
     
     sql.get(`SELECT * FROM descriptions WHERE userId = "${message.author.id}"`).then(row => {
       if(!row) {
