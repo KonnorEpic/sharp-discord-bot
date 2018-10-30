@@ -1,8 +1,11 @@
 const Discord = require('discord.js');
 const fs = require('fs');
+const sql = require('sqlite');
 const config = require('./config.json');
 
 const { cmd_prefix, ownerID } = config;
+
+sql.open('./assets/sqlite/descriptions.sqlite');
 
 const client = new Discord.Client({disableEveryone: true});
   client.commands = new Discord.Collection();
