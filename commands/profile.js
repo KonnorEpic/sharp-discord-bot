@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const sql = require('sqlite');
 
 module.exports.run = async (client, message, args) => {
-  sql.open('../assets/sqlite/descriptions.sqlite');
+  sql.open("../assets/sqlite/descriptions.sqlite");
   
   if(args[0] === 'desc:') {
     let text = args.slice(6).join(' ');
