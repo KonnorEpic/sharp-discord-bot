@@ -5,7 +5,7 @@ const config = require('./config.json');
 
 const { cmd_prefix, ownerID } = config;
 
-sql.open('./assets/sqlite/descriptions.sqlite');
+sql.open("./assets/sqlite/descriptions.sqlite");
 
 const client = new Discord.Client({disableEveryone: true});
   client.commands = new Discord.Collection();
